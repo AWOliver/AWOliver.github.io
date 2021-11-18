@@ -1,0 +1,195 @@
+/*Här lägger jag in ett typsnitt*/
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+/*generella utseenden på alla element samt typsnitt*/
+* {
+  margin: 0px;
+  border-width: 0px;
+  padding: 0px;
+  font-family: "Bree Serif";
+}
+
+/*färger på headern och dess storlek*/
+header {
+  /*testa att ta bort stycket*/
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  background-color: #fff;
+  height: 100px;
+  border-bottom: #3d1189 solid 6px;
+  border-top: #3d1189 solid 6px;
+}
+
+/*här dekorerar jag endast länkarna i headern*/
+header a {
+  text-decoration: none;
+  color: #d17a22;
+}
+
+/*skapar en reaktion när man håller musen över länkarna i nav samt vad som ska hända*/
+nav a:hover {
+  color: #000;
+  transition: 0.35s;
+}
+
+/*Väljer placering för header-left och dess färg*/
+.header-left {
+  margin-left: 25px;
+  width: 10%;
+  margin-bottom: 5px;
+  margin-right: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 10%;
+  margin-right: 15%;
+  display: flex;
+  align-items: center;
+
+  color: antiquewhite;
+
+  font-size: 35px;
+}
+
+/*Skapar strecket till vänster i headern*/
+.header-left div {
+  height: 75px;
+  width: 3%;
+}
+.header-left a {
+  margin-left: 100px;
+}
+
+/*Skapar strecket till vänster i headern*/
+.header-left div {
+  height: 75px;
+  width: 3px;
+
+  margin-top: 5px;
+  background-color: #d17a22;
+}
+
+.header-mid {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+  column-gap: 7%;
+  height: auto;
+  width: 50%;
+
+  font-size: 22px;
+}
+
+.Membership {
+  position: relative;
+  display: inline-block;
+}
+
+/*Ger knappen utseende och dess position*/
+.MemberDrop {
+  margin-left: 100px;
+  font-size: 17px;
+  color: antiquewhite;
+  background-color: #3d1189;
+  width: 75%;
+  height: 50px;
+  border-radius: 10px;
+}
+
+/*Ger denna del specifika egenskaper för att
+kunna anpassas utan flexbox samt ger den positionering för att få knappen att bete sig som den ska.*/
+.MemberCont {
+  display: none;
+  margin-left: 100px;
+  position: absolute;
+  background-color: #fff;
+  border: #000 solid 2px;
+  border-radius: 3px;
+  min-width: 75%;
+}
+
+/*Detta får MemberCont att visas när man håller musen över Membership*/
+.Membership:hover .MemberCont {
+  display: block;
+}
+
+.MemberCont a {
+  display: block;
+  padding: 5px 20px;
+  color: #d17a22;
+}
+
+.MemberCont a:hover {
+  background-color: #566e3d;
+  transition: 0.35s;
+}
+
+/*BODY*/
+
+.bigLink {
+  display: flex;
+  gap: 50px;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.bigLink a {
+  text-decoration: none;
+  color: #000;
+}
+
+.walletmaker img {
+  width: 400px;
+  border-radius: 10px;
+  margin-left: 300px;
+  font-size: 20px;
+  color: antiquewhite;
+  background-color: #3d1189;
+  width: 120px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+/*Ger denna del specifika egenskaper för att
+kunna anpassas utan flexbox samt ger den positionering för att få knappen att bete sig som den ska.*/
+.MemberCont {
+  display: none;
+  margin-left: 300px;
+  position: absolute;
+  background-color: #fff;
+  border: #000 solid 2px;
+  border-radius: 3px;
+  width: 150px;
+}
+
+/*Detta får MemberCont att visas när man håller musen över Membership*/
+.Membership:hover .MemberCont {
+  display: block;
+}
+
+.MemberCont a {
+  display: block;
+  padding: 5px 20px;
+  color: #d17a22;
+}
+
+.MemberCont a:hover {
+  background-color: #566e3d;
+  transition: 0.35s;
+}
+
+/*BODY*/
+
+body img {
+  width: 400px;
+  border-radius: 10px;
+  margin-left: 17%;
+}
