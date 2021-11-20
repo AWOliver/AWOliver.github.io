@@ -147,50 +147,41 @@ kunna anpassas utan flexbox samt ger den positionering för att få knappen att 
 
 .topHome {
   display: flex;
-  width: auto;
-  align-items:center;
-  flex-flow: column wrap;
-  height: 1500px;
+  justify-content: center;
+  gap: 20%;
 }
-
-.topCont{
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  width: 50%;
-}
-
 
 .vertline {
   width: 10px;
   height: 1500px;
-
   background-color: #3d1189;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .products {
   display: flex;
   gap: 50px;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  border: solid #000 3px;
+  margin-top: 10%;
+}
 
-  width: 100%;
-  margin-top: 5%;
-  margin-left: 25%;
+
+
+.products:hover, .prodImg {
+  transition: 0.35s ease-in-out;
 }
 
 .leather {
   display: flex;
   gap: 50px;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  border: solid #000 3px;
-
-
-  width: 100%;
-  margin-top: 5%;
-  margin-left: 25%;
 }
 
 .topHome a{
@@ -198,10 +189,11 @@ kunna anpassas utan flexbox samt ger den positionering för att få knappen att 
   color: #000;
 }
 
-.topHome img {
+.products img {
   width: 400px;
   border-radius: 20px;
   border: #566e3d solid 5px;
+  transform: scale(1.1);
 }
 
 .topHome ul{
