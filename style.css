@@ -171,13 +171,6 @@ kunna anpassas utan flexbox samt ger den positionering för att få knappen att 
   margin-top: 10%;
 }
 
-
-
-.products:hover, .prodImg {
-  transition: 0.35s ease-in-out;
-  
-}
-
 .leather {
   display: flex;
   gap: 50px;
@@ -190,7 +183,13 @@ kunna anpassas utan flexbox samt ger den positionering för att få knappen att 
   color: #000;
 }
 
-.products img {
+.products img{
+  width: 400px;
+  border-radius: 20px;
+  border: #566e3d solid 5px;
+}
+
+.leather img {
   width: 400px;
   border-radius: 20px;
   border: #566e3d solid 5px;
@@ -201,4 +200,8 @@ kunna anpassas utan flexbox samt ger den positionering för att få knappen att 
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.moreCont {
+  
 }
