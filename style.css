@@ -113,7 +113,15 @@ kunna anpassas utan flexbox samt ger den positionering för att få knappen att 
   transition: 0.35s;
 }
 
-/*BODY*/
+/*
+BODY
+BODY
+BODY
+BODY
+BODY
+BODY
+BODY
+*/
 
 
 /*Ger denna del specifika egenskaper för att
@@ -163,19 +171,23 @@ kunna anpassas utan flexbox samt ger den positionering för att få knappen att 
   gap: 50px;
 }
 
-.products {
+.designs {
   display: flex;
   gap: 50px;
   justify-content: center;
   align-items: center;
   margin-top: 10%;
+  border: #000 solid 3px;
 }
 
 .leather {
+  margin-right: auto;
   display: flex;
   gap: 50px;
   justify-content: center;
   align-items: center;
+  border: #000 solid 3px;
+  position:relative;
 }
 
 .topHome a{
@@ -183,25 +195,36 @@ kunna anpassas utan flexbox samt ger den positionering för att få knappen att 
   color: #000;
 }
 
-.products img{
+.designImg{
   width: 400px;
+  max-height: 280px;
   border-radius: 20px;
   border: #566e3d solid 5px;
 }
 
+.designs:hover .designImg{
+  border: #000 2px solid;
+  box-shadow: 5px 5px 7px #000;
+  transform: scale(1.1);
+  transition: 1s;
+}
+/*AYUDARME linjerna rör sig. Måste skapa effekten för att bilden ska försvinna*/
 .leather img {
   width: 400px;
+  max-height: 200px;
   border-radius: 20px;
   border: #566e3d solid 5px;
+}
+
+.leather:hover .lethImg{
   transform: scale(1.1);
+  transition: 1s;
+  border: #000 solid 2px;
+  box-shadow: 5px 5px 7px #000;
 }
 
 .topHome ul{
   display: flex;
   flex-direction: column;
   gap: 15px;
-}
-
-.moreCont {
-  
 }
