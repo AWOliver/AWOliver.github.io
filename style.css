@@ -113,17 +113,6 @@ kunna anpassas utan flexbox samt ger den positionering för att få knappen att 
   transition: 0.35s;
 }
 
-/*
-BODY
-BODY
-BODY
-BODY
-BODY
-BODY
-BODY
-*/
-
-
 /*Ger denna del specifika egenskaper för att
 kunna anpassas utan flexbox samt ger den positionering för att få knappen att bete sig som den ska.*/
 .MemberCont {
@@ -151,7 +140,15 @@ kunna anpassas utan flexbox samt ger den positionering för att få knappen att 
   transition: 0.35s;
 }
 
-/*BODY*/
+/*
+BODY
+BODY
+BODY
+BODY
+BODY
+BODY
+BODY
+*/
 
 .topHome {
   display: flex;
@@ -165,7 +162,7 @@ kunna anpassas utan flexbox samt ger den positionering för att få knappen att 
   background-color: #3d1189;
 }
 
-.content{
+.content {
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -187,27 +184,38 @@ kunna anpassas utan flexbox samt ger den positionering för att få knappen att 
   justify-content: center;
   align-items: center;
   border: #000 solid 3px;
-  position:relative;
+  position: relative;
 }
 
-.topHome a{
+.topHome a {
   text-decoration: none;
   color: #000;
 }
 
-.designImg{
+.designImg {
   width: 400px;
   max-height: 280px;
   border-radius: 20px;
   border: #566e3d solid 5px;
 }
 
-.designs:hover .designImg{
+.designs:hover .designImg {
   border: #000 2px solid;
-  box-shadow: 5px 5px 7px #000;
-  transform: scale(1.1);
+  box-shadow: 5px 7px 7px #000;
+  transform: scale(1.05);
   transition: 1s;
+  opacity: 25%;
 }
+
+.popupProd {
+  display: none;
+  position: absolute;
+}
+
+.designs:hover .popupProd {
+  display: block;
+}
+
 /*AYUDARME linjerna rör sig. Måste skapa effekten för att bilden ska försvinna*/
 .leather img {
   width: 400px;
@@ -216,14 +224,14 @@ kunna anpassas utan flexbox samt ger den positionering för att få knappen att 
   border: #566e3d solid 5px;
 }
 
-.leather:hover .lethImg{
-  transform: scale(1.1);
+.leather:hover .lethImg {
+  transform: scale(1.05);
   transition: 1s;
   border: #000 solid 2px;
   box-shadow: 5px 5px 7px #000;
 }
 
-.topHome ul{
+.topHome ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
