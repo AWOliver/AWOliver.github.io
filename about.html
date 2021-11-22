@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link ref="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <p> hej, Jag heter Oliver</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link ref="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--skapar en klass för innehållet till vänster i headern-->
+    <div class="header-left">
+      <a href="home.html">DIY Wallet</a>
+      <!--En div där jag kan färga innehållet och forma det till ett streck för att
+      skilja på innehållet-->
+      <div></div>
+    </div>
+
+    <!--Skapar länkar för att användaren ska kunna hänvisas till andra sidor-->
+    <nav class="header-mid">
+      <a href="home.html">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Guides</a>
+      <a href="about.html">About us</a>
+    </nav>
+
+    <!--En knapp som ska ha en meny inuti sig. Därför lägger jag även till en div i klassen-->
+    <div class="Membership">
+      <button class="MemberDrop">Membership</button>
+      <div class="MemberCont">
+        <a href="Login.html">Log In</a>
+        <a href="SignUp.html">Sign Up</a>
+      </div>
+    </div>
+  </body>
 </html>
