@@ -7,6 +7,7 @@
   border-width: 0px;
   padding: 0px;
   font-family: "Bree Serif";
+  color: #fff;
 }
 
 .allHome {
@@ -180,18 +181,29 @@ BODY
   color: #000;
 }
 
-.designImg {
-  background-image: url("designWallet.jpg");
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
+.contImg {
   width: 100%;
   height: 100%;
-  border: #197beb solid;
+  position: relative;
+  display: inline-block;
+}
+
+.designImg {
+  background-image: url("designWallet.jpg");
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
 }
 
 .designCont {
   display: none;
+  position: absolute;
+  color: #ff8000;
+  background-color: transparent;
 }
 
 .designs:hover .designImg {
@@ -203,8 +215,11 @@ BODY
 }
 
 .design:hover .designCont {
-  position: center;
-  color: #ff8000;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: #fff;
+  transition: 1s;
 }
 
 .tools {
