@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body class="allHome">
     <header class="header">
       <!--skapar en klass för innehållet till vänster i headern-->
       <div class="header-left">
@@ -38,24 +38,16 @@
 
     <!--CONTENT-->
 
-    <!--Skapar en klass för allt i w-->
+    <!--Skapar en klass för allt i home-->
     <div class="topHome">
-      <!--Detta är det vänstra vertikala strecket-->
-      <div class="vertline"></div>
-
       <!--Detta är en klass för allt innehåll i body förutom strecken-->
       <div class="content">
         <!--Det första stora innehållet-->
         <div class="designs">
-          <!--Här skapar jag länkar både till bilden och texkten-->
-          <a href="designs.html">
-            <img
-              src="Blueprint.jpg"
-              alt="Our Wallet designs"
-              class="designImg"
-            />
-            <p class="popupProd">Our designs</p>
-          </a>
+          <!--Här skapar jag länkar både till bilden och texten-->
+          <div class="designImg">
+            <a class="designCont" href="designs.html">Wallet Designs</a>
+          </div>
           <a href="designs.html">
             <ul>
               <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
@@ -74,11 +66,10 @@
               <li>Lorem, ipsum dolor sit amet consectetur adipisicing</li>
             </ul>
           </a>
-          <a href="startKit.html">
-            <img src="tools.jpg" alt="Buy Starter Kit" class="toolImg" />
-          </a>
+          <div class="toolImg">
+            <a class="toolCont" href="startKit.html">Starter Tool Kits</a>
+          </div>
         </div>
-
         <div class="moreCont">
           <a href="About.html" class="footCont">About Us</a>
           <a href="gallery.html" class="footCont"> Photo Gallery</a>
@@ -87,8 +78,6 @@
           <a href="leather.html">Leather Guide</a>
         </div>
       </div>
-
-      <div class="vertline"></div>
     </div>
   </body>
 </html>
