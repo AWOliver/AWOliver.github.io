@@ -11,7 +11,7 @@
 }
 
 .allHome {
-  background-image: url("background.jpg");
+  background-image: url("./images/background.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-size: 100%;
@@ -204,7 +204,7 @@ BODY
 .designImg {
   width: 100%;
   height: 100%;
-  background-image: url("designWallet.jpg");
+  background-image: url("./images/designWallet.jpg");
   background-size: cover;
   background-position: center 45%;
   border-radius: 10px;
