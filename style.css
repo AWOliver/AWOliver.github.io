@@ -19,7 +19,7 @@
 }
 
 /*färger på headern och dess storlek och position*/
-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,7 +30,7 @@ header {
 }
 
 /*här dekorerar jag endast länkarna i headern*/
-header a {
+.header a {
   text-decoration: none;
   color: #f58617;
 }
@@ -65,10 +65,9 @@ header a {
 
 .header-mid {
   display: flex;
-  flex-flow: row;
   justify-content: center;
-  align-content: center;
-  column-gap: 7%;
+  align-items: center;
+  gap: 7%;
   height: auto;
   width: 50%;
   font-size: 22px;
@@ -78,13 +77,13 @@ header a {
   display: flex;
   align-items: center;
   gap: 5%;
-  margin-right: 5%;
 }
 
 .header-right img {
   width: 40px;
   height: 40px;
   border-radius: 2px;
+  margin-right: 50px;
 }
 
 .Membership {
@@ -234,4 +233,102 @@ BODY
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 200px);
+}
+
+/*
+ABOUT
+ABOUT
+ABOUT
+ABOUT
+ABOUT
+ABOUT
+ABOUT
+*/
+.allAbout {
+  background-color: #566e3d;
+}
+
+.headerAbout {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  gap: 12%;
+  height: 100px;
+  border-bottom: #197beb solid 6px;
+}
+
+.headerAbout a {
+  text-decoration: none;
+  color: #f58617;
+}
+
+.about {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 25%;
+  text-decoration-color: #197beb;
+  color: #000;
+  text-align: center;
+  border: 15px groove #ff8000;
+}
+
+.about img {
+  align-self: center;
+  max-width: 800px;
+}
+
+.about h1 {
+font-size: 50px;
+color: #000;
+text-shadow: 2px 4px 4px #ff8000;
+margin-bottom: 5%;
+}
+
+.about h2 {
+  color: #000;
+}
+
+.about h3 {
+  color: #000;
+  font-size: 30px;
+}
+
+.about p {
+  color: #000;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+footer {
+  height: 350px;
+  width: auto;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  color: #fff;
+}
+
+footer h2 {
+  margin-top: 100px;
+}
+
+footer p {
+  justify-self: flex-end;
+  align-self: flex-start;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.moreAbout {
+  color: #fff;
+  display: flex;
+  gap: 50px;
 }
