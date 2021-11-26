@@ -5,6 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="headerOther">
+      <!--skapar en klass för innehållet till vänster i headern-->
+      <div class="header-left">
+        <a href="index.html">DIY Wallet</a>
+        <!--En div där jag kan färga innehållet och forma det till ett streck för att
+        skilja på innehållet-->
+        <div></div>
+      </div>
+
+      <!--Skapar länkar för att användaren ska kunna hänvisas till andra sidor-->
+      <nav class="header-mid">
+        <a href="index.html">Home</a>
+        <a href="design.html">Templates</a>
+        <a href="tool.html">Tools</a>
+        <a href="about.html">About us</a>
+      </nav>
+
+      <div class="header-right">
+        <!--En knapp som ska ha en meny inuti sig. Därför lägger jag även till en div i klassen-->
+        <div class="Membership">
+          <button class="MemberDrop">Membership</button>
+          <div class="MemberCont">
+            <a href="login.html">Log In</a>
+            <a href="login.html">Sign Up</a>
+          </div>
+        </div>
+        <a href="cart.html">
+          <img src="./images/cart.png" alt="Shopping Cart" />
+        </a>
+      </div>
+    </header>
+    
+    <div class="template-all">
+      <div class="vertline"></div>
+      <div class="template">
+        <img src="./images/template.png" alt="Picture of tool kit">
+        <h1>Folding Wallet</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Possimus, fuga reiciendis! Ea neque unde quos, error libero, 
+          consequuntur voluptate quo praesentium illum labore nostrum 
+          veritatis quas fuga odit, tempore dolorem cupiditate nam quia 
+          nobis exercitationem. Vitae et accusamus sed laudantium quis rem 
+          omnis labore cumque veritatis optio corporis fuga, sapiente 
+          magnam aliquam harum totam nemo iusto soluta maxime. Facere, 
+          voluptas!</p>
+          <a class="buy" href="buy.html">Buy</a>
+
+          <img src="./images/template1.jpg" alt="Picture of tool kit">
+        <h1>Slim Wallet</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Possimus, fuga reiciendis! Ea neque unde quos, error libero, 
+          consequuntur voluptate quo praesentium illum labore nostrum 
+          veritatis quas fuga odit, tempore dolorem cupiditate nam quia 
+          nobis exercitationem. Vitae et accusamus sed laudantium quis rem 
+          omnis labore optio corporis fuga, sapiente magnam aliquam 
+          harum totam nemo iusto soluta maxime. Facere, 
+          voluptas!</p>
+          <a class="buy" href="buy.html">Buy</a>
+        </div>
+      <div class="vertline"></div>
+    </div>
+  </body>
 </html>
