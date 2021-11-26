@@ -10,7 +10,7 @@
 }
 
 .allHome {
-  background-image: url('./images/background.jpg') ;
+  background-image: url("./images/background.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -174,7 +174,7 @@ BODY
   position: absolute;
   opacity: 0;
   transition: all 0.45s ease;
-  color:#fff;
+  color: #fff;
   font-size: 30px;
 }
 
@@ -196,7 +196,6 @@ BODY
   gap: 100px;
   min-width: 400px;
 }
-
 
 .contImg {
   width: 500px;
@@ -232,8 +231,6 @@ BODY
   color: #fff;
   text-decoration: none;
   font-size: 20px;
->>>>>>> 60f50c95f73a125293ac3b2dfb38772ce304052b
-
 }
 
 .tool-all .toolText {
@@ -241,7 +238,7 @@ BODY
   position: absolute;
   opacity: 0;
   transition: all 0.5s ease;
-  color:#fff;
+  color: #fff;
   font-size: 30px;
 }
 
@@ -355,10 +352,10 @@ ABOUT
 }
 
 .about h1 {
-font-size: 50px;
-color: #000;
-text-shadow: 2px 4px 4px #ff8000;
-margin-bottom: 5%;
+  font-size: 50px;
+  color: #000;
+  text-shadow: 2px 4px 4px #ff8000;
+  margin-bottom: 5%;
 }
 
 .about h2 {
@@ -396,7 +393,6 @@ footer a {
   color: #fff;
 }
 
-
 footer p {
   justify-self: flex-end;
   align-self: flex-start;
@@ -410,7 +406,6 @@ footer p {
   display: flex;
   gap: 50px;
 }
-
 
 /*
 FAQ
@@ -434,7 +429,7 @@ FAQ
 
 .faq h1 {
   color: #ff8000;
-  text-decoration-line:overline;
+  text-decoration-line: overline;
 }
 
 .question {
@@ -449,7 +444,6 @@ FAQ
   color: red;
 }
 
-
 /*
 PHOTO GALLERY
 PHOTO GALLERY
@@ -459,56 +453,36 @@ PHOTO GALLERY
 PHOTO GALLERY
 PHOTO GALLERY
 */
+.gallery-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .gallery {
-  width: 100%;
-  height: auto;
+  background-color: rgb(121, 64, 49);
   display: grid;
-  grid-template-columns: repeat(8, minmax(50px, 1fr));
-  grid-template-rows: repeat(6, minmax(50px, 1fr));
-  border: #000 solid;
+  width: 100%;
+  height: 100%
+  gap: 10px;
+  grid-template-areas:
+    "a b c"
+    "d b e"
+    "d f f"
+    "g g h"
+    "i j h"
+    "i k h";
+  grid-template-rows: repeat(6, minmax(1fr, 1200px));
+  grid-template-columns: repeat(auto-fill minmax(1fr, 900px));
 }
 
 .gallery-img {
-  width: 100%;
-  height: 100%;
-  object-fit:cover;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
 }
-
 
 .img1 {
-  grid-row: span 2 / auto;
-  grid-column: span 3 / auto;
-}
-.img2 {
-  grid-row: span 4 / auto;
-  grid-column: span 2 / auto;
-}
-.img3 {
-  grid-row: span 3 / auto;
-  grid-column: span 3 / auto;
-}
-.img4 {
-  grid-area: img4;
-}
-.img5 {
-  grid-area: img5;
-}
-.img6 {
-  grid-area: img6;
-}
-.img7 {
-  grid-area: img7;
-}
-.img8 {
-  grid-area: img8;
-}
-.img9 {
-  grid-area: img9;
-}
-.img10 {
-  grid-area: img10;
-}
-.img11 {
-  grid-area: img11;
+  grid-area: g;
 }
